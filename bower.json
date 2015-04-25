@@ -1,0 +1,12 @@
+{
+  "name": "Phaser Example",
+  "version": "0.0.1",
+  "main": "index.js",
+  "authors": [
+    "Takumi Endo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "~2.3.0"
+  }
+}

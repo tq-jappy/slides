@@ -12,7 +12,7 @@ Scene.Title = function(game) {
 }
 Scene.Title.prototype = {
   preload: function() {
-    game.load.image('logo', 'assets/phaser_pixel_large_shaded.png');
+    game.load.image('logo', 'app/assets/phaser_pixel_large_shaded.png');
   },
   create: function() {
     game.stage.backgroundColor = color.font;
@@ -66,7 +66,7 @@ Scene.PhaserLogo = function(game) {
 Scene.PhaserLogo.prototype = {
   phaserLogo: null,
   preload: function() {
-    game.load.image('logo', 'lib/phaser/phaser-logo-small.png');
+    game.load.image('logo', 'app/lib/phaser/phaser-logo-small.png');
   },
   create: function() {
     game.stage.backgroundColor = color.font;
@@ -133,9 +133,9 @@ Scene.Animation.prototype = {
   mode: 0,
   speed: 3,
   preload: function() {
-    game.load.image('monster', 'assets/pipo-enemy016.png');
-    game.load.spritesheet('hone', 'assets/hone.png', 32, 32, 12);
-    game.load.spritesheet('kabocha', 'assets/kabocha.png', 32, 32, 12);
+    game.load.image('monster', 'app/assets/pipo-enemy016.png');
+    game.load.spritesheet('hone', 'app/assets/hone.png', 32, 32, 12);
+    game.load.spritesheet('kabocha', 'app/assets/kabocha.png', 32, 32, 12);
   },
   create: function() {
     title("アニメーション");
@@ -214,10 +214,10 @@ Scene.Monsters.prototype = {
   monsterGroup: null,
   monsters: [],
   preload: function() {
-    game.load.image('monster1', 'assets/pipo-enemy009.png');
-    game.load.image('monster2', 'assets/pipo-enemy012.png');
-    game.load.image('monster3', 'assets/pipo-enemy016.png');
-    game.load.image('monster4', 'assets/pipo-enemy002a.png');
+    game.load.image('monster1', 'app/assets/pipo-enemy009.png');
+    game.load.image('monster2', 'app/assets/pipo-enemy012.png');
+    game.load.image('monster3', 'app/assets/pipo-enemy016.png');
+    game.load.image('monster4', 'app/assets/pipo-enemy002a.png');
   },
   create: function() {
     title("物理エンジン");
